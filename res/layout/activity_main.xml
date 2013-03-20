@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/serializar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Serializar" />
+
+        <Button
+            android:id="@+id/deserializar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Des-serializar" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textodesserializado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="24dp"
+        android:text="El método toString del objeto Alumno imprimirá aquí la información al des-serializar..."
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
